@@ -1,0 +1,377 @@
+@charset "UTF-8";
+@import url(../css/normalize.css);	/*normalize css*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* roboto font import */
+
+
+html {  /* html style */
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family:'roboto', sans-serif;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  }
+*, *:before, *:after {
+box-sizing: inherit;
+  }  
+  h1 {  /* h1 */
+
+    font-family: Candara;
+    font-size: 3em;
+    text-align: center;
+    margin: 0; 
+    padding: 50px 100px;
+    color: rgb(247, 233, 233);
+  }
+h2{
+text-align: center;}
+
+  /* header */
+
+  header{
+    background-image: url(../images/0.jpg);/*image at the header background*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    opacity: .8;
+
+  }
+  header p{
+    text-align: center;
+    color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  /* container */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  background-color: rgb(233, 231, 227);
+}
+
+/* right Columns */
+
+ 
+.right-column {
+  width: 55%;
+  margin-top: 60px;
+}
+
+/* Left Column */
+
+.left-column {
+  width: 75%;
+  position: relative;
+}
+.left-column {
+  opacity: .9;
+
+}
+ img {  /* images style */
+transition: transform .5s, fillter 0.5s ease-in-out;
+}
+img:hover  {
+transform:scale(1.5)
+}
+/* descrption of the product */
+.product-description {  
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 14px;
+  color: #111111;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight:100;
+  font-size: 52px;
+  color: #686d72;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #606366;
+  line-height: 24px;
+} /*end of description*/
+
+/*colors*/
+.product-color {
+  margin-bottom: 30px;
+}
+ 
+.color-choose div {
+  display: inline-block;
+}
+ /*lets choose the colors...*/
+.color-choose input[type="radio"] {
+  display: none;
+}
+ 
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+ 
+.color-choose input[type="radio"] + label span {
+  border: 2px solid #FFFFFF;
+  
+}
+ 
+.color-choose input[type="radio"]#darkblue + label span {
+  background-color: #1b5162;
+}
+.color-choose input[type="radio"]#green + label span {
+  background-color: #baf5c7;
+}
+.color-choose input[type="radio"]#white + label span  {
+  background-color: #e6e4dc;
+}
+.color-choose input[type="radio"]#black + label span {
+  background-color: #000000;
+}
+/*when checked*/
+.color-choose #darkblue:checked + label span{
+  box-shadow:  0 0 0 1px #073b4d;
+}
+.color-choose #green:checked + label span {
+  box-shadow:  0 0 0 1px #89d99a;
+}
+.color-choose #white:checked + label span {
+  box-shadow:  0 0 0 1px #a1a199;
+}
+.color-choose #black:checked + label span {
+  box-shadow:  0 0 0 1px #000000;
+}
+
+/*end colors*/
+
+.memory-choose, .screen-choose,.color-choose {  /* all button/colors radio margin */
+
+  margin-bottom: 20px;
+}
+ 
+.memory-choose button , .screen-choose button  {  /* memory and screen capacity  button */
+
+  border: 2px solid #E1E8EE;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #cfd2d3;
+  background-color: rgb(94, 90, 90);
+  cursor: pointer;
+  transition: all .5s;
+}
+.memory-choose button:hover,
+.memory-choose button :active,
+.memory-choose button :focus,
+.screen-choose button:hover,
+.screen-choose button :active,
+.screen-choose button :focus
+{
+  border: 2px solid #021220;
+  outline: none;
+}
+ 
+  /* price style */
+
+.product-price {
+  display: flex;
+  align-items: center;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+  /* add to cart button style */
+.cart-btn {
+  display: inline-block;
+  background-color: #000000;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+.cart-btn:hover {
+  background-color: #888d86;
+}
+/*reviews*/
+.review{
+  display: flex;
+  color: rgb(146, 139, 139);
+}
+.yellow{
+  color:#344661;
+}
+/* navigation! */
+nav{
+  margin:20px;
+  position: relative;
+}
+
+nav ul {
+  display: none; 
+  list-style-type: none;
+  padding: 7px;
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 250px;
+  border: 1px solid rgb(200,200,200);
+  border-radius: 4px;
+  border-top-right-radius: 0;
+}
+
+nav ul a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.5s all ease;
+}
+
+  a:hover {
+    color: rgb(204, 197, 197);
+  }
+a.active {
+    color: rgb(102, 102, 102);
+  }
+nav:focus ul,
+nav:hover ul {
+     display: block; 
+
+}
+
+.nav-cart{/*cart navigation*/
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  } 
+nav:hover #menu-icon {
+  transition: 0.5s all ease;
+  background-color: rgb(75, 77, 76);
+  }
+#menu-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 35px;
+  text-align: center;
+  transition: 0.5s all ease;
+  color: #606366;
+  }
+  /*responsive nav*/
+  
+@media all and (max-width: 600px){
+ header{
+  flex-direction:row;
+  color:rgb(121, 118, 118)
+    }}
+@media  (min-width: 768px){
+  #menu-icon {
+ display: none;
+      }
+nav ul {
+  border:0;
+  display: block;
+  position: static;
+  width: auto;
+  background-color: rgb(26, 25, 25);
+    }
+nav li {
+  display: inline-block;
+      }
+nav ul a:hover {
+  background-color: grey;
+}
+nav:hover #menu-icon {
+transition: 0.5s all ease;
+background-color: rgb(124, 124, 124);
+}
+}
+  
+/*footer*/
+footer{
+  background:rgb(22, 22, 22);
+  color:white;
+  text-align: center;
+
+}
+
+form button{
+  color: black;
+}
+footer a.top{/*arrow to top*/
+  position: fixed;
+  bottom: 1.5em;
+  left: 1.5em;
+  padding: 5px;
+ 
+  border-radius: 28px;
+  transition: 0.5s all ease;
+}
+p small{
+  color: #615d62;
+}
+/*footer end*/
+p{
+  color: #23262a;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.images {
+  position: relative;
+}
+

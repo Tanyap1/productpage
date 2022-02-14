@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Title -->
+	<title>Project 2 - COMP1054 - Web Design</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Social Media link -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />	<!-- meta mobile -->
+	<link rel="stylesheet" href="css/stylesheet.css"/>	<!-- stylesheet css -->
+</head>
+<body>
+	<nav class="topnav" >
+		<a href="#" id="menu-icon">	
+	 		<i class="fa fa-bars" aria-hidden="true"></i><!--Navigation-->
+		</a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">My Account</a></li>
+			<li class="nav-cart"><a href="cart.html">Cart (0)</a></li>
+		</ul>
+	</nav>
+	<header><!-- header -->
+		<h1>Welcome to Our Product Page</h1>	
+		<h1>Your #1 Phone choice</h1>
+	</header>
+
+	<main class="container">	<!--main container -->
+			<section>	<!-- section -->
+				<h2>Pick your phone</h2>
+				<div class="left-column">   <!--left side -->
+					<div class="images"> <!--Images -->
+						<img src="images/blue.jpg" alt="blue" id="expandedImg" style="width:100%">
+					</div>
+					<div class="row">
+					<div class="column">
+					<img  src="images/blue.jpg"  alt="blue"  width="180" height="200" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+					<img  src="images/green.jpg" alt="green" width="180" height="200" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+					<img  src="images/white.png" alt="white" width="180" height="200" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+					<img  src="images/black.png" alt="black" width="180" height="200" onclick="myFunction(this);">
+					</div>
+					</div>
+				</div>
+			</section>
+			<!--right side -->
+			<div class="right-column">
+				<div class="product-description">
+					<span>Apple phone</span>
+					<p>Iphone 12</p>
+					<p>Blast past fast.</p>
+					<p>5G speed. A14 Bionic, the fastest chip in a smartphone.
+					An edge-to-edge OLED display. Ceramic Shield with four times better drop performance. And Night mode on every camera. 
+					iPhone 12 has it all in two perfect sizes</p>
+				  </div>
+				  <div class="product-configuration">
+					<div class="product-color"><!--color picker-->
+						<span>Color</span>
+						<hr>
+						<div class="color-choose">
+						  <div>
+							<input data-image="darkblue" type="radio" id="darkblue" name="color" value="darkblue" >
+							<label for="darkblue"><span></span></label><!--color DARKBLUE-->
+						  </div>
+						  <div>
+							<input data-image="green" type="radio" id="green" name="color" value="green" >
+							<label for="green"><span></span></label><!--color GREEN-->
+						  </div>
+						  <div>
+							<input data-image="white" type="radio" id="white" name="color" value="white">
+							<label for="white"><span></span></label><!--color WHITE-->
+						  </div>
+						  <div>
+							<input data-image="black" type="radio" id="black" name="color" value="black">
+							<label for="black"><span></span></label><!--color BLACK-->
+						  </div>
+						</div>
+					<div class="screen">
+						<span>Screen Display</span>			<!--screen display configiration choices -->	 
+						<hr>
+						<div class="screen-choose">
+							<button>5.4-inch</button>
+							<button>6.1-inch</button>
+						</div>
+					  </div>
+					  <div class="memory">
+						<span>Memory Capacity </span><!--memory capacity configiration choices -->
+						<hr>
+						<div class="memory-choose"> 
+						  <button>64 GB</button>
+						  <button>128 GB</button>
+						  <button>256 GB</button>
+						</div>
+						<hr>
+					  </div>
+					</div>
+					<!-- Product Pricing -->
+					<div class="product-price">
+					  <span>$1090</span>
+					  <a href="cart.html" class="cart-btn">Add to cart</a>  
+					</div>
+					<p>In stock.<a href="#">Buy Extended Warranty</a></p>	
+					<p><b>**Please choose your Color, Screen and Memory Capacity</b></p>
+					<hr>
+				  <!--Reviews-->
+				  <div class="review">
+					<span class="fa fa-star yellow"></span>
+					<span class="fa fa-star yellow"></span>
+					<span class="fa fa-star yellow"></span>
+					<span class="fa fa-star yellow"></span>
+					<span class="fa fa-star"></span>
+					<span>(4.00 - 17002 reviews)</span></div>
+				  <P>"My favorite things about Apple products is that they are reliable, connect seamlessly to each other, and are incredibly user friendly. I believe anybody can learn to use an iPhone at its full potential just by playing around with it. Furthermore, they last so much longer than other brand's ..."</P>
+				  <p>"This is my current phone, has a great camera, it's very easy to use and the design is beautiful.
+					I hate covering it with a case because it is so beautiful to look at. It is also extremely durable. Highly recommend.
+				    I will probably not upgrade until, there is one that is light years ahead in design and functionality. I love my iPhone"</p>
+				
+				</div></div>
+				</main>
+		<!-- end #container -->	
+			<footer> <!--footer and subscribe form-->
+			<!--subscribe form-->
+			<h4>Subscribe to Newsletter and Promotions</h4> 
+			<form action="#" method="get">
+			  <label for="emailAddress" >Email:</label>
+			  <input type="email" name="email" id="email" placeholder="Type your email here" required >
+			  <button type="submit">Subscribe</button>
+		  </form>
+		  <!--end of the form-->
+			<a href="#" class="fa fa-facebook"></a><!-- facebook social media icon -->
+			<a href="#" class="fa fa-twitter"></a><!-- twitter social media icon -->
+			<p><a href="#" title="go to top button" class="top"><img src="images/arrow.svg" alt="top" width="25" height="25" /></a></p><!--credit to https://loading.io/icon/fd3daj-->
+			<p><small>Build by Tanya for CSS Class</small></p>
+		</footer>
+<script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+@charset "UTF-8";
+
+html {/*putting the picture at the background*/
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-image: url("../images/unnamed.jpg");
+    background-position: center;
+    background-size:80% ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+
+    }
+body {/*body*/
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+font-family: arial;
+color:white;
+text-align: center;
+line-height: 1.5;
+}
+h2{
+	font-size: 100%;
+	text-shadow: 2px 2px 5px rgb(94, 91, 95);
+	color: rgb(15, 15, 15);
+}
+/* navigation! */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+  a:hover {
+    color: rgb(112, 108, 108);
+  }
+  a.active {
+    color: black;
+  }
+  .nav-cart{
+    display: block;
+    float: right;
+    color: #0c0b0b;
+    background-color: black;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+h1{
+font-family: gabriola;
+font-size: 300%;
+color: white;
+text-align: center;
+
+}
+h3{	
+	font-size: 200%;
+	color: black;
+}	
+footer{
+	color: rgb(22, 22, 22);
+	position: relative;
+    text-align: center;
+    font-size:50%;
+
+}
+footer a{
+  color: #868c8d;
+  font-size: small;
+}
+p{
+	font-size: 100%;
+}
+
+  
+ .btn{/*btns*/
+
+  display: inline-block;
+  background-color: #5d5c5c;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: all .5s;
+}
+  .btn:hover{
+    background-color: #868c8d;
+}
+  
+img{
+  border: dotted black;
+}
+fieldset{
+  font-size: 100%;
+  padding: 0%;
+  position: relative;
+  border: none;
+}
+.fieldset h1 {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  line-height: 1;
+  margin: -9px 0 0; /* half of font-size */
+  background: #fff;
+  padding: 0 3px;
+}
+@media   (min-width: 600px){
+  header{
+      flex-direction:row;
+      color:black
+  }
+  #menu-icon {
+  
+    float: right;
+    display: block;
+    color: #020101;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    font-size: 17px;} 
+}
+@media   (min-width: 768px){
+  #menu-icon {
+      display: none;
+  }
+  nav ul {
+      border:0;
+      display: block;
+      position: static;
+      width: auto;
+
+  }
+  nav li {
+      display: inline-block;
+  }
+  nav ul a:hover {
+      background-color: rgb(180, 177, 177);
+  }
+  nav:hover #menu-icon {
+    transition: 0.5s all ease;
+    background-color: rgb(154, 156, 155);
+    color: black;
+}
+}
+  
